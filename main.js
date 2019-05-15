@@ -6,7 +6,7 @@ $(document).ready(function() {
             sdTopSpots += '<tr>'
             sdTopSpots += '<td>' + value.name + '</td>';
             sdTopSpots += '<td>' + value.description + '</td>';
-            sdTopSpots += '<td> "https://www.google.com/maps?q=' + value.location + '"</td>';
+            sdTopSpots += '<td> <a href="https://www.google.com/maps?q=' + value.location + '">Open in Google Maps</a></td>';
             sdTopSpots += '</tr>';
         });
         $('#san-diego-top-spots').append(sdTopSpots);
